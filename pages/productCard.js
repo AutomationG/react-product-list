@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/proudctCard.css';
+import './style/proudctCard.css';
 
 const ProductCard = (props) =>{
     return(
