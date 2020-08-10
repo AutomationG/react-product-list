@@ -4,7 +4,7 @@ Route,
 Switch
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
-import App from '../App';
+import App from '../pages/app';
 import configureStore from './store';
 
 const store = configureStore();

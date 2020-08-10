@@ -1,19 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+import route from '../reducers/main';
 
-class App extends Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <div>
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById('root'));
+render(route, document.getElementById('root'));

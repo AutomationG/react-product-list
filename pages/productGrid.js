@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
-import ProductCard from '../components/ProductCard';
-import ProductData from '../assest/ProductData';
-import '../style/ProductCard.css';
-import {addProductData} from '../actions/ProductListAction';
+import ProductCard from './productCard';
+import ProductData from '../utils/productData';
+import '../style/proudctCard.css';
+import {addProductData} from '../actions/productDataAction';
 
 
 const ProductList = (props) => {
