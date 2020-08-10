@@ -6,6 +6,7 @@ export const productList = (state = initialState, action) => {
     case "ADD_DATA":
       console.log('reducer')
       return Object.assign({}, state, {productData: 
-        action.data });
+        state.productData.concat(action.payload) });
+    default: return state;
   }
 };
