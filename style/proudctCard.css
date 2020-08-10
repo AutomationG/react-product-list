@@ -1,0 +1,24 @@
+.productCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+}
+
+.productList{
+    margin-left: 50px;
+    width: 150px;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+.buttoCart{
+    margin-top: 10px;
+}
