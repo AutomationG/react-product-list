@@ -8,13 +8,13 @@ import {addProductData} from '../actions/productDataAction.js';
 
 const ProductList = (props) => {
     useEffect(()=>{
-      console.log('useEffect')
+      console.log('useEf')
         props.addProductData(ProductData)
     },[])
 
     return(
         <ul className='list'>
-        {props.ProductDataProp.map((data) =>{
+        {ProductData.map((data) =>{
             return(
             <li className='productList'>
                 <ProductCard src={data.src} brand={data.brand} 

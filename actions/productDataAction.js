@@ -1,4 +1,4 @@
 export const addProductData = (payload) =>{
-console.log(productData)
+console.log(payload)
 return {type:'ADD_DATA',payload}
 }

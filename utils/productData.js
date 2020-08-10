@@ -3,7 +3,7 @@ const ProductData =
     {
         src :'\\utils\\images\\AKS PEACH KURTI.jpg',
         brand:'AKS',
-        product:'AKS Peach Kurti',
+        product:'Peach Kurti',
         price:'Rs 900'
     },
     {
