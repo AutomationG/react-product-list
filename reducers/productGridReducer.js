@@ -5,10 +5,11 @@ export const productList = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_DATA":
       console.log('reducer')
-      var a =  Object.assign({}, state, {productData: 
-        state.productData.concat(action.payload) });
-        console.log(a)
-        return a;
+      console.log(state)
+      return {...state,productData:action.payload}
+      // return Object.assign({}, state, {productData: 
+      //   state.productData.concat(action.payload) });
+    
     default: return state;
   }
 };

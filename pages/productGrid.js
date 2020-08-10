@@ -7,7 +7,7 @@ import {addProductData} from '../actions/productDataAction.js';
 
 
 const ProductList = (props) => {
-  console.log('props' + props)
+  console.log('props' + props.ProductDataProp)
     useEffect(()=>{
       console.log('useEf')
         props.addProductData(ProductData)
@@ -36,9 +36,8 @@ const mapDispatchToProps = (dispatch,ownProps) =>{
 }
 
 const mapStateToProps = (state,ownProps) =>{
-  console.log('state' + state.productList)
     return{
-    ProductDataProp : state.productList
+    ProductDataProp : state.productList.productData
     }
     
 }
