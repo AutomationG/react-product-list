@@ -7,7 +7,7 @@ import {addProductData} from '../actions/productDataAction.js';
 
 
 const ProductList = (props) => {
-  console.log('props' + props.ProductDataProp)
+  console.log('props' + props)
     useEffect(()=>{
       console.log('useEf')
         props.addProductData(ProductData)
