@@ -1,19 +1,19 @@
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
 import ProductCard from './productCard.js';
-import ProductData from './utils/productData.js';
-import './style/proudctCard.css';
-import {addProductData} from './actions/productDataAction.js';
+import ProductData from '../utils/productData.js';
+import '../style/proudctCard.css';
+import {addProductData} from '../actions/productDataAction.js';
 
 
 const ProductList = (props) => {
     useEffect(()=>{
-        props.addProductData(props.ProductData)
+        props.addProductData(ProductData)
     },[])
 
     return(
         <ul className='list'>
-        {props.ProductData.map((data) =>{
+        {props.ProductDataProp.map((data) =>{
             return(
             <li className='productList'>
                 <ProductCard src={data.src} brand={data.brand} 
@@ -35,7 +35,7 @@ const mapDispatchToProps = (dispatch,ownProps) =>{
 
 const mapStateToProps = (state,ownProps) =>{
     return{
-    ProductData : state.ProductData
+    ProductDataProp : state.ProductData
     }
     
 }
