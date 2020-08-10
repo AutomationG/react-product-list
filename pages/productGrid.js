@@ -15,7 +15,7 @@ const ProductList = (props) => {
 
     return(
         <ul className='list'>
-        {ProductData.map((data) =>{
+        {props.ProductDataProp.map((data) =>{
             return(
             <li className='productList'>
                 <ProductCard src={data.src} brand={data.brand} 
@@ -36,8 +36,9 @@ const mapDispatchToProps = (dispatch,ownProps) =>{
 }
 
 const mapStateToProps = (state,ownProps) =>{
+  console.log('state' + state.productList)
     return{
-    ProductDataProp : state.ProductData
+    ProductDataProp : state.productList
     }
     
 }
