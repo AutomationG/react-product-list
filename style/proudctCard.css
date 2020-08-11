@@ -27,7 +27,7 @@
 }
 
 .header{
-  background-color:aqua;
+  background-color:blanchedalmond;
   height: 100px;
 }
 
@@ -37,5 +37,6 @@
 
 .search{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
