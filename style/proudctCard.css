@@ -25,3 +25,17 @@
 .buttoCart{
     margin-top: 10px;
 }
+
+.header{
+  background-color:aqua;
+  height: 100px;
+}
+
+.title{
+  text-align: center;
+}
+
+.search{
+  display: flex;
+  justify-content: space-around;
+}
